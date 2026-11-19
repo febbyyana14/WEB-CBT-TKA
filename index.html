@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CBT TKA SD 2027</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══ Loading Overlay ══ -->
+  <div id="loadingOverlay">
+    <div class="spinner"></div>
+    <p class="text-muted" style="font-size:13px;">Memuat portal...</p>
+  </div>
+
+  <!-- ══ Toast Host ══ -->
+  <div id="toastHost"></div>
+
+  <!-- ══════════════════════════════════════════════
+       LANDING PAGE (Pengunjung)
+  ══════════════════════════════════════════════ -->
+  <div id="view-landing" class="view-section">
+    <nav class="landing-nav">
+      <div class="landing-nav-inner">
+        <div class="brand">
+          <span class="logo-badge" id="landingLogoBadge">🎓</span>
+          <span id="landingBrandName">CBT TKA SD</span>
+        </div>
+        <div class="links">
+          <a href="javascript:void(0)" onclick="scrollToId('fiturSection')">Fitur</a>
+          <a href="javascript:void(0)" onclick="scrollToId('previewSection')">Pratinjau Ujian</a>
+          <a href="javascript:void(0)" onclick="scrollToId('footerSection')">Bantuan</a>
+        </div>
+        <div class="spacer"></div>
+        <button class="btn btn-secondary btn-sm" onclick="navigateTo('login')">Masuk</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <span class="hero-badge">● Simulasi Resmi Standar Nasional SD/MI</span>
+      <h1>Portal Resmi Latihan &amp; Simulasi CBT TKA SD 2027</h1>
+      <p>Persiapkan dirimu menghadapi Tes Kemampuan Akademik jenjang SD/MI untuk Matematika &amp; Bahasa Indonesia dengan latihan interaktif dan try out standar nasional.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" onclick="navigateTo('register')">Daftar Sekarang</button>
+        <button class="btn btn-secondary" onclick="scrollToId('fiturSection')">Pelajari Kisi-kisi</button>
+      </div>
+      <div class="grid grid-4" id="landingStatsGrid">
+        <div class="kpi-card" style="background:var(--primary);color:#fff;border:none;"><div class="kpi-value" style="color:#fff;">10.000+</div><div class="kpi-label" style="color:rgba(255,255,255,.75);">Soal Terstandar</div></div>
+        <div class="kpi-card" style="background:var(--primary);color:#fff;border:none;"><div class="kpi-value" style="color:#fff;">2 Modul</div><div class="kpi-label" style="color:rgba(255,255,255,.75);">Mata Pelajaran Inti</div></div>
+        <div class="kpi-card" style="background:var(--primary);color:#fff;border:none;"><div class="kpi-value" style="color:var(--accent);">Instan</div><div class="kpi-label" style="color:rgba(255,255,255,.75);">Skor &amp; Pembahasan</div></div>
+        <div class="kpi-card" style="background:var(--primary);color:#fff;border:none;"><div class="kpi-value" style="color:#fff;">100%</div><div class="kpi-label" style="color:rgba(255,255,255,.75);">Gratis &amp; Terverifikasi</div></div>
+      </div>
+    </section>
+
+    <section class="hero" id="fiturSection">
+      <span class="hero-badge" style="background:var(--bg-tint);">KEUNGGULAN SISTEM CBT</span>
+      <h1 style="font-size:22px;">Fitur Unggulan Belajar Terpadu</h1>
+      <p>Dirancang khusus membantu siswa sekolah dasar menguasai format tes berbasis komputer dengan mudah.</p>
+      <div class="grid grid-2" style="margin-top:18px;">
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3>1. Kisi-kisi 2027</h3>
+          <p>Analisis materi, kompetensi, dan indikator lengkap sesuai pedoman asesmen nasional.</p>
+          <span class="feature-link" onclick="navigateTo('register')">Lihat silabus →</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h3>2. Latihan Soal Mandiri</h3>
+          <p>Pembahasan langsung, tanpa batas waktu, agar siswa memahami konsep secara mendalam.</p>
+          <span class="feature-link" onclick="navigateTo('register')">Mulai latihan →</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⏱️</div>
+          <h3>3. Simulasi Try Out Resmi</h3>
+          <p>Simulasi riil dengan batasan waktu, timer presisi detik, dan sistem koreksi otomatis.</p>
+          <span class="feature-link" onclick="navigateTo('register')">Ikuti simulasi →</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>4. Analisis Hasil Belajar</h3>
+          <p>Laporan perkembangan nilai, grafik kekuatan dan kelemahan materi untuk guru dan orang tua.</p>
+          <span class="feature-link" onclick="navigateTo('register')">Lihat contoh rapor →</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero" id="previewSection">
+      <div class="card card-pad">
+        <div class="flex justify-between items-center mb-2">
+          <strong style="font-size:14px;">🖥️ Tampilan Layar Ujian Ramah Anak</strong>
+          <span class="pill pill-neutral">Pratinjau</span>
+        </div>
+        <div class="card" style="background:var(--bg-canvas);">
+          <div class="card-pad">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="pill pill-mtk">01 Matematika · Bilangan Bulat</span>
+              <span class="text-muted" style="margin-left:auto;font-size:12.5px;">⏱ 45:00</span>
+            </div>
+            <p style="font-size:13.5px;margin:0 0 12px;">Sebuah toko buku memiliki 120 kardus pensil. Jika setiap kardus berisi 24 batang pensil, berapa total pensil yang tersedia di toko tersebut?</p>
+            <div class="grid grid-2">
+              <div class="option-card" style="margin:0;"><span class="option-letter">A</span><span>2.480 batang</span></div>
+              <div class="option-card selected" style="margin:0;"><span class="option-letter">B</span><span>2.880 batang</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="landing-footer" id="footerSection">
+      <div class="foot-inner">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="logo-badge" style="width:30px;height:30px;font-size:14px;">🎓</span>
+            <strong style="color:#fff;" id="footerBrandName">CBT TKA SD 2027</strong>
+          </div>
+          <p style="font-size:13px;max-width:380px;">Pusat layanan asesmen dan evaluasi kesiapan akademik siswa sekolah dasar se-Indonesia. Berorientasi pada kenyamanan dan kemandirian siswa.</p>
+        </div>
+        <div>
+          <h4>Bantuan &amp; Sekolah</h4>
+          <ul>
+            <li><a href="javascript:void(0)" onclick="navigateTo('register')">Panduan Pengguna</a></li>
+            <li><a href="javascript:void(0)" id="footerWhatsapp">Layanan Bantuan Sekolah</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Dukungan Teknis</h4>
+          <ul>
+            <li>🔒 Sistem Cloud Terenkripsi</li>
+            <li>💻 Kompatibel Laptop, Chromebook &amp; Tablet</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom" id="footerCopyright">© 2027 Pusat Asesmen Pendidikan • Hak Cipta Dilindungi Undang-Undang.</div>
+    </footer>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LOGIN
+  ══════════════════════════════════════════════ -->
+  <div id="view-login" class="view-section">
+    <div class="auth-wrap">
+      <div class="auth-card fade-in">
+        <div class="auth-logo">🎓</div>
+        <h2 class="auth-title">Masuk Portal CBT TKA SD 2027</h2>
+        <p class="auth-sub">Silakan masukkan email dan kata sandi Anda</p>
+        <form id="formLogin" onsubmit="return handleLogin(event)">
+          <div class="field">
+            <label>Email</label>
+            <div class="input-group">
+              <span class="icon-left">✉️</span>
+              <input type="email" class="input" id="loginEmail" placeholder="nama@email.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label>Kata Sandi</label>
+            <div class="input-group">
+              <span class="icon-left">🔒</span>
+              <input type="password" class="input" id="loginPassword" placeholder="Masukkan kata sandi" required>
+              <button type="button" class="icon-right" onclick="togglePasswordView('loginPassword')">👁️</button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="btnLoginSubmit">Masuk ke Akun →</button>
+        </form>
+        <div class="auth-switch">
+          Belum punya akun? <a href="javascript:void(0)" onclick="navigateTo('register')" style="color:var(--accent);font-weight:700;">Daftar Sekarang</a>
+        </div>
+        <div class="auth-switch"><a href="javascript:void(0)" onclick="navigateTo('landing')">← Kembali ke beranda</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       REGISTRASI
+  ══════════════════════════════════════════════ -->
+  <div id="view-register" class="view-section">
+    <div class="auth-wrap">
+      <div class="auth-card fade-in" style="max-width:480px;">
+        <div class="auth-logo">🎓</div>
+        <h2 class="auth-title">Buat Akun Portal CBT TKA SD 2027</h2>
+        <p class="auth-sub">Lengkapi data registrasi dan masukkan token aktivasi dari Super Admin / Pengawas sekolah Anda.</p>
+        <form id="formRegister" onsubmit="return handleRegister(event)">
+          <div class="field">
+            <label>Nama Lengkap *</label>
+            <input type="text" class="input" id="regNama" placeholder="Contoh: Raden Danang Pratama" required>
+          </div>
+          <div class="field">
+            <label>Email *</label>
+            <input type="email" class="input" id="regEmail" placeholder="nama@email.com" required>
+          </div>
+          <div class="field">
+            <label>Asal Sekolah *</label>
+            <input type="text" class="input" id="regSekolah" placeholder="Contoh: SDN Menteng 01 Pagi" required>
+          </div>
+          <div class="grid grid-2">
+            <div class="field">
+              <label>Kelas</label>
+              <input type="text" class="input" id="regKelas" placeholder="Contoh: 6">
+            </div>
+            <div class="field">
+              <label>NISN / NIP <span class="text-muted" style="font-weight:400;">(opsional)</span></label>
+              <input type="text" class="input" id="regNISN" placeholder="Nomor identitas">
+            </div>
+          </div>
+          <div class="field">
+            <label>Token Aktivasi Sekolah</label>
+            <input type="text" class="input input-token" id="regToken" placeholder="TKASD-2027-XXXX">
+            <div class="hint">Tidak punya token? Centang kotak di bawah — akun Anda akan menunggu persetujuan manual Super Admin.</div>
+          </div>
+          <div class="field">
+            <label class="checkbox-row" style="font-weight:600;">
+              <input type="checkbox" id="regTanpaToken">
+              <span>Ajukan tanpa token (menunggu persetujuan Super Admin)</span>
+            </label>
+          </div>
+          <div class="grid grid-2">
+            <div class="field">
+              <label>Kata Sandi Baru *</label>
+              <input type="password" class="input" id="regPassword" placeholder="Minimal 8 karakter" minlength="8" required>
+            </div>
+            <div class="field">
+              <label>Konfirmasi Sandi *</label>
+              <input type="password" class="input" id="regPasswordConfirm" placeholder="Ulangi kata sandi" minlength="8" required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="checkbox-row">
+              <input type="checkbox" id="regSetuju" required>
+              <span>Saya menyetujui ketentuan penggunaan portal CBT TKA SD 2027 dan kebenaran data registrasi.</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="btnRegisterSubmit">Daftar &amp; Masuk ke Dashboard →</button>
+        </form>
+        <div class="auth-switch">
+          Sudah punya akun? <a href="javascript:void(0)" onclick="navigateTo('login')" style="color:var(--accent);font-weight:700;">Masuk di sini</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       APP SHELL (Dashboard Super Admin & Pengguna)
+  ══════════════════════════════════════════════ -->
+  <div id="appShell">
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar(false)"></div>
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="logo-badge" id="sidebarLogoBadge">🎓</span>
+        <div>
+          <h1 id="sidebarAppTitle">CBT TKA SD 2027</h1>
+          <small id="sidebarRoleLabel">Super Admin</small>
+        </div>
+      </div>
+      <div class="sidebar-nav" id="sidebarNav"><!-- diisi JS: renderSidebarNav() --></div>
+      <div class="sidebar-footer">
+        <div class="flex items-center justify-between">
+          <span style="font-size:13px;font-weight:600;">🌙 Mode Gelap</span>
+          <label class="switch"><input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()"><span class="slider"></span></label>
+        </div>
+        <button class="btn btn-outline btn-sm w-full" onclick="handleLogout()">⎋ Keluar</button>
+      </div>
+    </nav>
+
+    <div class="main-area">
+      <div class="topbar">
+        <button class="icon-btn" id="btnToggleSidebar" onclick="toggleSidebar()" style="display:none;">☰</button>
+        <h2 id="topbarTitle">Beranda</h2>
+        <div class="avatar" id="topbarAvatar">S</div>
+      </div>
+      <main class="page-content" id="pageContainer">
+        <!-- Konten tiap halaman disuntikkan di sini via JS (instant, tanpa reload) -->
+      </main>
+    </div>
+
+    <nav class="bottom-nav" id="bottomNav"><!-- diisi JS: renderBottomNav() --></nav>
+  </div>
+
+  <!-- ══ Modal generik (dipakai ulang untuk konfirmasi, form, pratinjau) ══ -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-box" id="modalBox">
+      <div class="modal-head">
+        <h3 id="modalTitle">Judul</h3>
+        <button class="icon-btn" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-foot" id="modalFoot"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/gas-shim.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
