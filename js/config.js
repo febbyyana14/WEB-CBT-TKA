@@ -4,4 +4,4 @@
    (lihat PANDUAN-INSTALASI.md bagian Backend, langkah terakhir).
    Jangan hapus tanda kutip, dan jangan sampai ada spasi di dalamnya.
    ============================================================ */
-const GAS_URL = 'https://script.google.com/macros/s/AKfycbzNxlgs4PLY6j5MwG_kz58Zno8e9SBtN-VhSXcu_lz5IsB6fyWcstXH71t_MdeaCE2l/exec'; // ← ganti {gas} dengan URL asli, contoh: https://script.google.com/macros/s/AKfycb.../exec
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbzWEBrwo47mmRADMT1yaq3CtBMtd60RE5kYnncEeWpMFmn0gkQVJxPHIiRqxUTUwraA/exec'; // ← ganti {gas} dengan URL asli, contoh: https://script.google.com/macros/s/AKfycb.../exec
